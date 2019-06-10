@@ -44,7 +44,8 @@ class ClassGenerator extends Generator {
 
 		// Create the new test file in the unit test directory.
 		this.copyTemplate(
-			'test.ts', `test/unit/${filename}.ts`,
+			'test.ts',
+			`test/unit/${filename}.ts`,
 			{ name, filename }
 		);
 	}

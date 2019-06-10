@@ -46,7 +46,7 @@ class ClassGenerator extends Generator {
 		this.copyTemplate(
 			'test.ts',
 			`test/unit/${filename}.ts`,
-			{ name, filename }
+			{ name, filename },
 		);
 	}
 }

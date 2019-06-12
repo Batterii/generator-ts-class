@@ -3,7 +3,19 @@ A [yeoman](https://yeoman.io/) generator for creating new classes in Batterii
 TypeScript projects.
 
 
-## Providing the Class Name
+## Usage
+```
+  yo @batterii/ts-class [options]
+
+Options:
+  -h,   --help           # Print the generator's options and usage
+        --skip-cache     # Do not remember prompt answers             Default: false
+        --skip-install   # Do not automatically install dependencies  Default: false
+        --force-install  # Fail on install dependencies error         Default: false
+  -n,   --name           # Name of the class
+```
+
+## The Class Name
 This generator accepts a `name` option, which will determine the name of the
 class it creates. The name must be a valid TypeScript identifier in camelcase,
 with the first letter capitalized. If it is not provided, the generator will

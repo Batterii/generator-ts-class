@@ -1,3 +1,3 @@
 export class <%= name %> {
-	// Implement the '<%= name %>' class here.
+	// Implement the <%= name %> class here.
 }

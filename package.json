@@ -18,9 +18,8 @@
 		"prepublishOnly": "git push && git push --tags"
 	},
 	"dependencies": {
-		"@batterii/yeoman-helpers": "0.0.3",
-		"decamelize": "^3.2.0",
-		"lodash": "^4.17.11"
+		"@batterii/yeoman-helpers": "^0.1.0",
+		"decamelize": "^3.2.0"
 	},
 	"devDependencies": {
 		"@batterii/eslint-config-node": "^1.0.6",

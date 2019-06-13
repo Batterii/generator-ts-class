@@ -1,6 +1,6 @@
 {
 	"name": "@batterii/generator-ts-class",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Batterii TypeScript class generator",
 	"keywords": [
 		"yeoman-generator"

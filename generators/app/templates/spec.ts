@@ -1,4 +1,4 @@
-import { <%= name %> } from '../../lib/<%= moduleName %>';
+import { <%= name %> } from './<%= moduleName %>';
 import { expect } from 'chai';
 import sinon from 'sinon';
 

@@ -23,13 +23,13 @@ class ClassGenerator extends Generator {
 		// Create the module name by decamelizing the class name.
 		const moduleName = decamelize(name, '-');
 
-		// Create the new class file in the lib directory.
-		this.copyTemplate('class.ts', `lib/${moduleName}.ts`);
+		// Create the new class file in the src/lib directory.
+		this.copyTemplate('class.ts', `src/lib/${moduleName}.ts`);
 
-		// Create the new test file in the unit test directory.
+		// Create the new spec file in the src/lib directory.
 		this.copyTemplate(
-			'test.ts',
-			`test/unit/${moduleName}.ts`,
+			'spec.ts',
+			`src/lib/${moduleName}.spec.ts`,
 			{ name, moduleName },
 		);
 	}

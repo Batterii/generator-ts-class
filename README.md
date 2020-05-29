@@ -25,8 +25,8 @@ prompt the user for it.
 ## Implementing Your Class
 When the generator has finished, two new files will exist:
 
-- `lib/${decamelized name}.ts`: Implement your class here.
-- `test/unit/${decamelized name}.ts`: Write unit tests for your class here.
+- `src/lib/${decamelized name}.ts`: Implement your class here.
+- `src/lib/${decamelized name}.spec.ts`: Write unit tests for your class here.
 
 The generated unit test file imports your class, as well as the `expect`
 function from `chai` for writing assertions. It also imports the entire `sinon`
@@ -38,5 +38,5 @@ to remove it in this case.
 ## Exporting Your Class
 If you are working on a library project, and you'd like your class to be
 available as part of the library's public API, make sure to export it from
-`lib/index.ts`. Otherwise, classes created by this generator should be
+`src/index.ts`. Otherwise, classes created by this generator should be
 considered internal to their projects.

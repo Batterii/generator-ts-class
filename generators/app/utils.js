@@ -9,5 +9,5 @@ const namePattern = /^[A-Z][A-Za-z0-9]*$/;
  */
 exports.validateName = function(name) {
 	return namePattern.test(name) ||
-		'Class name must be a valid identifier in upper camel case';
+		"Class name must be a valid identifier in upper camel case";
 };

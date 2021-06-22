@@ -21,7 +21,7 @@ class ClassGenerator extends Generator {
 		const {name} = this.options;
 
 		// Create the module name by decamelizing the class name.
-		const moduleName = decamelize(name, "-");
+		const moduleName = decamelize(name, {separator: "-"});
 
 		// Create the new class file in the src/lib directory.
 		this.copyTemplate("class.ts", `src/lib/${moduleName}.ts`);
